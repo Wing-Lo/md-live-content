@@ -5,8 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MD Live Content</title>
         <link rel="stylesheet" href="styles/styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="scripts/main.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script>
+            cssVars({
+                // Options
+                onlyLegacy: true, // Only run in browsers that need it
+                watch: true, // Update when CSS changes
+            });
+        </script>
     </head>
     <body>
-        <script src="scripts/app.js" type="module"></script>
+        <main />
     </body>
 </html>

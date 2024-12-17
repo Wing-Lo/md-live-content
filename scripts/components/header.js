@@ -4,7 +4,7 @@ export function loadHeader() {
             <div class="header-container">
                 <div class="branding">
                     <div class="logo">
-                        <a href="#home"><img src="./src/logo.png" alt="Logo" width="52px"></a>
+                        <a href="#home"><img src="./assets/logo.png" alt="Logo" width="52px"></a>
                     </div>
                     <div class="title">
                         <h3>LIVE CONTENT</h3>
@@ -21,5 +21,5 @@ export function loadHeader() {
         </header>
     `;
 
-    document.body.insertAdjacentHTML("afterbegin", headerHTML);
+    $("body").prepend(headerHTML);
 }
