@@ -5,7 +5,7 @@ export function loadLoginPage() {
 
     mainContent.html(`
         <div class="branded-wrapper">
-            <div class="login-container">
+            <div class="branded-container">
                 <p>Please login using your MD Live Content credentials.</p>
                 <form class="login-form">
                     <input type="text" placeholder="User Name" name="username" required>

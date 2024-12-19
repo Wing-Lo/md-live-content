@@ -55,4 +55,8 @@ export function loadConfigurePage() {
             $dropdownContainer.addClass("hidden");
         }
     });
+
+    $(".btn-next").on("click", () => {
+        loadAppearanceSolidColour();
+    });
 }

@@ -1,3 +1,4 @@
+import { loadAppearanceSolidColour } from "./appearanceSolidColour.js";
 import { loadBasicSetting } from "./basicSetting.js";
 
 export function loadBackground() {
@@ -15,7 +16,7 @@ export function loadBackground() {
                             <label>
                                 <input type="radio" name="backgroundOption" value="solid" checked>
                                 Use Solid Colour
-                                <input class="colour-picker" type="color" value="#4C969B">
+                                <input class="color-picker" type="color" value="#4C969B">
                             </label>
                         </div>
                         <div class="dimension-section">
@@ -62,5 +63,9 @@ export function loadBackground() {
     // Handle back button
     $(".btn-back").on("click", () => {
         loadBasicSetting();
+    });
+
+    $(".btn-next").on("click", () => {
+        loadAppearanceSolidColour();
     });
 }

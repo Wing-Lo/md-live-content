@@ -1,5 +1,6 @@
-import { loadNewCampaign } from "./newCampaign.js";
 import { loadBackground } from "./background.js";
+import { loadNewCampaign } from "./newCampaign.js";
+
 export function loadBasicSetting() {
     const mainContent = $("main");
 
